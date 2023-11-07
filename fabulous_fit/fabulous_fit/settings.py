@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Here we add our new application
     'pages.apps.PagesConfig',
+    'blog.apps.BlogConfig',
     # 'products.apps.ProductsConfig',
     # 'cart.apps.CartConfig',
     # 'orders.apps.OrdersConfig',

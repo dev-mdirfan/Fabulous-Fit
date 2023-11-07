@@ -31,3 +31,7 @@
 #### Name Generated from
 
 [Business Name Generator](https://businessnamegenerator.com/nameideas/?bname=Nexus+Store+Store+Shoppable+Garments+Ebuy+Emart+Shop+Market+Shippr+Instashop+ShipShop+Shopline&device=desktop&shortcode_id=10)
+
+### Resources
+
+- Favicon Generator [](https://realfavicongenerator.net/)

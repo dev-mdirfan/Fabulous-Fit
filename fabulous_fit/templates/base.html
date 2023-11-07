@@ -5,19 +5,19 @@
 
 <head>
     <!-- Dynamic Title -->
-    <title>{% block title %}{% endblock title %} - E-Commerce</title>
+    <title>{% block title %}{% endblock title %} - Where Style Meets Comfort!</title>
     <!-- meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="meta description">
-    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon"> -->
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/favicon/favicon_white/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon_white/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon_white/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/favicon/favicon_white/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'img/favicon/favicon_white/safari-pinned-tab.svg' %}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Favicons -->
@@ -27,65 +27,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- all css -->
-
-    <style>
-        :root {
-            --primary-color: #FFAE00;
-            --secondary-color: #efa608;
-
-            --btn-primary-border-radius: 0.25rem;
-            --btn-primary-color: #000;
-            --btn-primary-background-color: #FFAE00;
-            --btn-primary-border-color: #FFAE00;
-            --btn-primary-hover-color: #000;
-            --btn-primary-background-hover-color: #efa608;
-            --btn-primary-border-hover-color: #efa608;
-            --btn-primary-font-weight: 500;
-
-            --btn-secondary-border-radius: 0.25rem;
-            --btn-secondary-color: #FFAE00;
-            --btn-secondary-background-color: transparent;
-            --btn-secondary-border-color: #FFAE00;
-            --btn-secondary-hover-color: #fff;
-            --btn-secondary-background-hover-color: #efa608;
-            --btn-secondary-border-hover-color: #efa608;
-            --btn-secondary-font-weight: 500;
-
-            --heading-color: #000;
-            --heading-font-family: 'Poppins', sans-serif;
-            --heading-font-weight: 700;
-
-            --title-color: #000;
-            --title-font-family: 'Poppins', sans-serif;
-            --title-font-weight: 400;
-
-            --body-color: #000;
-            --body-background-color: #fff;
-            --body-font-family: 'Poppins', sans-serif;
-            --body-font-size: 14px;
-            --body-font-weight: 300;
-
-            --section-heading-color: #000;
-            --section-heading-font-family: 'Poppins', sans-serif;
-            --section-heading-font-size: 48px;
-            --section-heading-font-weight: 600;
-
-            --section-subheading-color: #000;
-            --section-subheading-font-family: 'Poppins', sans-serif;
-            --section-subheading-font-size: 16px;
-            --section-subheading-font-weight: 400;
-        }
-    </style>
-
+    <link rel="stylesheet" href="{% static 'css/root.css' %}">
     <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
-    <!-- Main Content -->
-    {% block content %}
-    {% endblock content %}
-    <!-- Main Content -->
+    <div class="body-wrapper">
+        <!-- Announcement Bar Start -->
+        {% include 'partials/announcement_bar.html' %}
+        <!-- Announcement Bar End -->
+
+        <!-- Header Start -->
+        {% include 'partials/header.html' %}
+        <!-- Header End -->
+
+        {% if request.path != '/' %}
+        <!-- Breadcrumb Start -->
+        {% include 'partials/breadcrumb.html' %}
+        <!-- Breadcrumb End -->
+        {% endif %}
+
+        <!-- Main Content -->
+        {% block content %}
+        {% endblock content %}
+        <!-- Main Content -->
+
+        <!-- Footer Start -->
+        {% include 'partials/footer.html' %}
+        <!-- Footer End -->
+
+        <!-- Scroll Up Start -->
+        {% include 'partials/scroll_up.html' %}
+        <!-- Scroll Up End -->
+
+        <!-- Drawer Menu Start -->
+        {% include 'partials/drawer_menu.html' %}
+        <!-- Drawer Menu End -->
+
+        <!-- Drawer Cart Start -->
+        {% include 'partials/drawer_cart.html' %}
+        <!-- Drawer Cart End -->
+
+        {% if request.path != '/' %}
+        <!-- Product QuickView Start -->
+        {% include 'partials/product_quickview.html' %}
+        <!-- Product QuickView End -->
+
+        <!-- Newsletter Subscribe Modal Start -->
+        {% include 'partials/newsletter.html' %}
+        <!-- Newsletter Subscribe Modal End -->
+        {% endif %}
+
+        <!-- all js -->
+        <script src="{% static 'js/vendor.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+    </div>
 </body>
 
 </html>
