@@ -35,16 +35,16 @@
 <body>
     <div class="body-wrapper">
         <!-- Announcement Bar Start -->
-        {% include 'partials/announcement_bar.html' %}
+        {% include 'partials/_announcement_bar.html' %}
         <!-- Announcement Bar End -->
 
         <!-- Header Start -->
-        {% include 'partials/header.html' %}
+        {% include 'partials/_header.html' %}
         <!-- Header End -->
 
         {% if request.path != '/' %}
         <!-- Breadcrumb Start -->
-        {% include 'partials/breadcrumb.html' %}
+        {% include 'partials/_breadcrumb.html' %}
         <!-- Breadcrumb End -->
         {% endif %}
 
@@ -54,29 +54,31 @@
         <!-- Main Content -->
 
         <!-- Footer Start -->
-        {% include 'partials/footer.html' %}
+        {% include 'partials/_footer.html' %}
         <!-- Footer End -->
 
         <!-- Scroll Up Start -->
-        {% include 'partials/scroll_up.html' %}
+        {% include 'partials/_scroll_up.html' %}
         <!-- Scroll Up End -->
 
         <!-- Drawer Menu Start -->
-        {% include 'partials/drawer_menu.html' %}
+        {% include 'partials/_drawer_menu.html' %}
         <!-- Drawer Menu End -->
 
         <!-- Drawer Cart Start -->
-        {% include 'partials/drawer_cart.html' %}
+        {% include 'partials/_drawer_cart.html' %}
         <!-- Drawer Cart End -->
 
-        {% if request.path != '/' %}
+        {% if request.path == '/' %}
         <!-- Product QuickView Start -->
-        {% include 'partials/product_quickview.html' %}
+        {% include 'partials/_product_quickview.html' %}
         <!-- Product QuickView End -->
 
+        {% if not user.is_authenticated %}
         <!-- Newsletter Subscribe Modal Start -->
-        {% include 'partials/newsletter.html' %}
+        {% include 'partials/_newsletter.html' %}
         <!-- Newsletter Subscribe Modal End -->
+        {% endif %}
         {% endif %}
 
         <!-- all js -->
