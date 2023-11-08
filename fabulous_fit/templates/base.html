@@ -69,11 +69,13 @@
         {% include 'partials/_drawer_cart.html' %}
         <!-- Drawer Cart End -->
 
-        {% if request.path == '/' %}
+        {% if request.path == '/' or 'wishlist' in request.path %}
         <!-- Product QuickView Start -->
         {% include 'partials/_product_quickview.html' %}
         <!-- Product QuickView End -->
+        {% endif %}
 
+        {% if request.path == '/' %}
         {% if not user.is_authenticated %}
         <!-- Newsletter Subscribe Modal Start -->
         {% include 'partials/_newsletter.html' %}

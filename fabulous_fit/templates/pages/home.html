@@ -10,22 +10,22 @@
     <!-- slideshow start -->
     <div class="slideshow-section position-relative">
         <div class="slideshow-active activate-slider" data-slick='{
-      "slidesToShow": 1, 
-      "slidesToScroll": 1, 
-      "dots": true,
-      "arrows": true,
-      "responsive": [
-        {
-          "breakpoint": 768,
-          "settings": {
-            "arrows": false
-          }
-        }
-      ]
-  }'>
+        "slidesToShow": 1, 
+        "slidesToScroll": 1, 
+        "dots": true,
+        "arrows": true,
+        "responsive": [
+            {
+            "breakpoint": 768,
+            "settings": {
+                "arrows": false
+                }
+            }
+        ]
+    }'>
             <div class="slide-item position-relative overlay">
-                <img class="slide-img d-none d-md-block" src="assets/img/slideshow/t1.jpg" alt="slide-1">
-                <img class="slide-img d-md-none" src="assets/img/slideshow/t1.jpg" alt="slide-1">
+                <img class="slide-img d-none d-md-block" src="{% static 'img/slideshow/t1.jpg' %}" alt="slide-1">
+                <img class="slide-img d-md-none" src="{% static 'img/slideshow/t1.jpg' %}" alt="slide-1">
                 <div class="content-absolute content-slide">
                     <div class="container height-inherit d-flex align-items-center justify-content-start">
                         <div class="content-box slide-content py-4">
@@ -50,8 +50,8 @@
                 </div>
             </div>
             <div class="slide-item position-relative overlay">
-                <img class="slide-img d-none d-md-block" src="assets/img/slideshow/t2.jpg" alt="slide-2">
-                <img class="slide-img d-md-none" src="assets/img/slideshow/t2.jpg" alt="slide-2">
+                <img class="slide-img d-none d-md-block" src="{% static 'img/slideshow/t2.jpg' %}" alt="slide-2">
+                <img class="slide-img d-md-none" src="{% static 'img/slideshow/t2.jpg' %}" alt="slide-2">
                 <div class="content-absolute content-slide">
                     <div class="container height-inherit d-flex align-items-center justify-content-start">
                         <div class="content-box slide-content py-4">
@@ -76,8 +76,8 @@
                 </div>
             </div>
             <div class="slide-item position-relative overlay">
-                <img class="slide-img d-none d-md-block" src="assets/img/slideshow/t3.jpg" alt="slide-">
-                <img class="slide-img d-md-none" src="assets/img/slideshow/t3.jpg" alt="slide-">
+                <img class="slide-img d-none d-md-block" src="{% static 'img/slideshow/t3.jpg' %}" alt="slide-">
+                <img class="slide-img d-md-none" src="{% static 'img/slideshow/t3.jpg' %}" alt="slide-">
                 <div class="content-absolute content-slide">
                     <div class="container height-inherit d-flex align-items-center justify-content-start">
                         <div class="content-box slide-content py-4">
@@ -115,7 +115,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="trusted-badge bg-4 rounded">
                             <div class="trusted-icon">
-                                <img class="icon-trusted" src="assets/img/trusted/4.png" alt="icon-1">
+                                <img class="icon-trusted" src="{% static 'img/trusted/4.png' %}" alt="icon-1">
                             </div>
                             <div class="trusted-content">
                                 <h2 class="heading_18 trusted-heading text-white">Free Shipping & Return</h2>
@@ -127,7 +127,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="trusted-badge bg-4 rounded">
                             <div class="trusted-icon">
-                                <img class="icon-trusted" src="assets/img/trusted/5.png" alt="icon-2">
+                                <img class="icon-trusted" src="{% static 'img/trusted/5.png' %}" alt="icon-2">
                             </div>
                             <div class="trusted-content">
                                 <h2 class="heading_18 trusted-heading text-white">Customer Support 24/7</h2>
@@ -139,7 +139,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="trusted-badge bg-4 rounded">
                             <div class="trusted-icon">
-                                <img class="icon-trusted" src="assets/img/trusted/6.png" alt="icon-3">
+                                <img class="icon-trusted" src="{% static 'img/trusted/6.png' %}" alt="icon-3">
                             </div>
                             <div class="trusted-content">
                                 <h2 class="heading_18 trusted-heading text-white">100% Secure Payment</h2>

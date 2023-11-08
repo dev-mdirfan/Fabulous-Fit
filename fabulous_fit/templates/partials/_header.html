@@ -7,7 +7,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-4 col-4">
                     <div class="header-logo">
-                        <a href="index-tools.html" class="logo-main">
+                        <a href="{% url 'home' %}" class="logo-main">
                             <img src="{% static 'img/logo/logo-black-transparent.png' %}" loading="lazy"
                                 alt="Fabulous Fit">
                         </a>
@@ -178,7 +178,7 @@
                             </li>
                             <li class="menu-list-item nav-item has-megamenu">
                                 <div class="mega-menu-header">
-                                    <a class="nav-link" href="collection-left-sidebar.html">
+                                    <a class="nav-link" href="{% url 'shop' %}">
                                         Shop
                                     </a>
                                     <span class="open-submenu">
@@ -239,6 +239,10 @@
                                                     <ul class="megamenu list-unstyled">
                                                         <li class="menu-list-item nav-item-sub">
                                                             <a class="nav-link-sub nav-text-sub"
+                                                                href="{% url 'shop' %}">Explore All Products</a>
+                                                        </li>
+                                                        <li class="menu-list-item nav-item-sub">
+                                                            <a class="nav-link-sub nav-text-sub"
                                                                 href="product.html">Festival Sales</a>
                                                         </li>
                                                         <li class="menu-list-item nav-item-sub">
@@ -252,10 +256,6 @@
                                                         <li class="menu-list-item nav-item-sub">
                                                             <a class="nav-link-sub nav-text-sub"
                                                                 href="product.html">Featured & On Sale</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product-2.html">Tab Inside</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -332,7 +332,7 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="member-signup d-flex justify-content-end">
-                        <a href="about-us.html" class="btn-member text-white">Become a Seller</a>
+                        <a href="seller.html" class="btn-member text-white">Become a Seller</a>
                     </div>
                 </div>
             </div>

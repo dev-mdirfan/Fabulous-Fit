@@ -35,3 +35,4 @@
 ### Resources
 
 - Favicon Generator [](https://realfavicongenerator.net/)
+- Image Resizer [](https://biteable.com/tools/image-resizer/)
