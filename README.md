@@ -34,5 +34,6 @@
 
 ### Resources
 
-- Favicon Generator [](https://realfavicongenerator.net/)
-- Image Resizer [](https://biteable.com/tools/image-resizer/)
+- Favicon Generator: [Real Fav Icon Generator](https://realfavicongenerator.net/)
+- Image Resizer: [Biteable](https://biteable.com/tools/image-resizer/)
+- Icon Download [Flat Icon](https://www.flaticon.com/search?type=icon)
