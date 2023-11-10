@@ -1,9 +1,12 @@
 # Fabulous Fit: Where Style Meets Comfort!
 
-**Website Name:** Fabulous Fit
-**Slogan:** Where Style Meets Comfort!
-**Website URL:** https://fabulous-fit.herokuapp.com/
-**Website Purpose:** To provide a platform for users to purchase clothing and accessories that are both stylish and comfortable.
+> **Website Name:** Fabulous Fit
+> 
+> **Slogan:** Where Style Meets Comfort!
+> 
+> **Website URL:** https://fabulous-fit.herokuapp.com/
+> 
+> **Website Purpose:** To provide a platform for users to purchase clothing and accessories that are both stylish and comfortable.
 
 ![Fabulous Origin](fabulous-origin.png)
 
