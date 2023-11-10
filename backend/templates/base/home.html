@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="home-container">
+    <div>
+    </div>
+    <div>
+        {% if user.is_authenticated %}
+            <h1>Welcome {{ user.username }}</h1>
+        {% else %}
+            <h1>Welcome to Fabulous Fit</h1>
+            <p>Log in to access the backend</p>
+        {% endif %}
+    </div>
+    <div></div>
+</div>
+{% endblock %}
